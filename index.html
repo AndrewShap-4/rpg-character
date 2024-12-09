@@ -12,33 +12,24 @@
         margin: 0;
         padding: 0;
       }
-      #demo {
-        margin: var(--ddd-spacing-2);
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: var(--ddd-spacing-8px);
+        font-family: "Verdana", Arial, sans-serif;
       }
-      rpg-character {
-        margin: var(--ddd-spacing-2);
-        border: var(--ddd-border-md);
-        border-radius: var(--ddd-radius-lg);
-      }
-      rpg-character:hover {
-        box-shadow: var(--ddd-boxShadow-sm);
-      }
-      #example {
-        --nasa-search-font-size: var(--ddd-font-size-l);
-        background-color: var(--ddd-accent-2);
-        color: var(--ddd-primary-17);
-      }
-
-
     </style>
+
+
     <title>rpg-character</title>
   </head>
   
-  <body>
-    <div id="demo">
-      <rpg-character></rpg-character>
+    <body>
+    <div id="rpgme-element">
+      <h1>Create your Character!</h1>
+      <rpgme-element></rpgme-element>
       <!-- this is going to do whatever the tag's defaults are -->
     </div>
-    <script type="module" src="./rpg-character.js"></script>
-</body>
+    </body>
+    <script type="module" src="./rpgme.js"></script>
 </html>
