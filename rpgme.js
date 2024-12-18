@@ -272,7 +272,6 @@ export class RPGMeElement extends DDDSuper(I18NMixin(LitElement)) {
   _button() {
     const params = new URLSearchParams({
       seed: this.seed,
-      fire: this.characterDesign.fire ? "true" : "false",
     });
     const shareUrl = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
     navigator.clipboard.writeText(shareUrl).then(() => {
